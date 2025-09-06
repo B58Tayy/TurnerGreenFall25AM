@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coral Mushrooms Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Photo gallery of Coral Mushrooms">
+    <meta name="keywords" content="Coral Mushrooms, Artomyces pyxidatus, fungi, gallery">
+    <meta name="author" content="Tayy">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #f5fff5, #e6f7ff);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: #004d40;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+        }
+
+        header h2 {
+            font-weight: 300;
+        }
+
+        nav {
+            text-align: center;
+            background: #00796b;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 12px;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 77, 64, 0.8);
+            color: white;
+            padding: 0.8rem;
+            font-size: 1rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #004d40;
+            color: white;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CORAL MUSHROOMS</h1>
+        <h2>Looks just like Coral in the ocean</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <main>
+        <h2>GALLERY</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/01.jpg" alt="Coral Mushroom 1">
+                <div class="caption">Coral Mushroom 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/02.jpg" alt="Coral Mushroom 2">
+                <div class="caption">Coral Mushroom 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/03.jpg" alt="Coral Mushroom 3">
+                <div class="caption">Coral Mushroom 3</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/04.jpg" alt="Coral Mushroom 4">
+                <div class="caption">Coral Mushroom 4</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/05.jpg" alt="Coral Mushroom 5">
+                <div class="caption">Coral Mushroom 5</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/06.jpg" alt="Coral Mushroom 6">
+                <div class="caption">Coral Mushroom 6</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/07.jpg" alt="Coral Mushroom 7">
+                <div class="caption">Coral Mushroom 7</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/08.jpg" alt="Coral Mushroom 8">
+                <div class="caption">Coral Mushroom 8</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/09.jpg" alt="Coral Mushroom 9">
+                <div class="caption">Coral Mushroom 9</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Sources</h3>
+        <ul>
+            <li>Wikipedia</li>
+            <li>Mushroom Expert</li>
+            <li>Mushroom Appreciation</li>
+        </ul>
+    </footer>
+</body>
+</html>
