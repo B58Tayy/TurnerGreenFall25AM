@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Mushroom Studio — Home</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #eaf5ea; /* light green background */
+      color: #2e4d2e;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.5em;
+      color: #2e4d2e;
+    }
+
+    a {
+      text-decoration: none;
+      color: #005f3b;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .site-header {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2e7d32;
+      color: #fff;
+    }
+
+    .site-title {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .site-subtitle {
+      font-size: 1rem;
+      margin: 0.5rem 0 0 0;
+      font-weight: 300;
+    }
+
+    /* Navigation */
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #4caf50;
+      padding: 0.75rem;
+      margin: 0;
+    }
+
+    .main-nav a {
+      font-weight: 600;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .main-nav a:hover {
+      background: #2e7d32;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    /* Sections */
+    .hero, .featured-mushroom, .quick-links {
+      padding: 1rem;
+      margin: 1rem;
+      background: white;
+      border: 2px solid #c8e6c9;
+      border-radius: 6px;
+    }
+
+    /* Gallery */
+    .thumb-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .thumb-row img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 2px solid #81c784;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2e7d32;
+      color: #fff;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="site-title"> My Mushroom Studio</h1>
+    <h2 class="site-subtitle">A Haven for Mushroom Lovers</h2>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="types.html">TYPES</a></li>
+      <li><a href="featured.html">FEATURED</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Let's Dive In !</h2>
+      <article class="typography-examples">
+        <h3>What Are Mushrooms ?</h3>
+        <p id="lead">
+          Mushrooms are fascinating organisms that are neither plants nor animals, but belong to their own kingdom
+          called Fungi...
+        </p>
+        <p id="muted">
+          Mushrooms are used for many different purposes because of their unique properties...
+        </p>
+        <p>
+          In addition, mushrooms are important in traditional practices and natural dyeing...
+        </p>
+        <h4>Why are there different types of Mushrooms ? </h4>
+        <p>
+          Mushrooms also reproduce by releasing spores, and over time, genetic changes create new species...
+        </p>
+      </article>
+    </section>
+
+    <section class="featured-mushroom">
+      <h3>Featured Mushroom: Polyozellus atrolazulinus</h3>
+      <p>
+        Polyozellus atrolazulinus is a rare and striking species often known as the "blue chanterelle."...
+      </p>
+      <ul>
+        <li>Belongs to the genus <em>Polyozellus</em></li>
+        <li>Nicknamed the "blue chanterelle"</li>
+        <li>Grows in clusters, forming rosettes</li>
+        <li>Found mainly in East Asia and North America</li>
+        <li>Studied for pigments and bioactive compounds</li>
+      </ul>
+    </section>
+
+    <section class="quick-links">
+      <h3>Gallery</h3>
+      <div class="thumb-row">
+        <img src="Images /boletus.jpg" alt="Boletus mushroom">
+        <img src="Images /cortinarius_violaceus.jpg" alt="Cortinarius violaceus thumbnail">
+        <img src="Images /polyozellus.jpg" alt="Polyozellus atrolazulinus thumbnail">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> My Mushroom Studio • Sept. 20th 2025</p>
+  </footer>
+</body>
+</html>

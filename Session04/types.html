@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Mushroom Studio — Types</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #eaf5ea; /* light green background */
+      color: #2e4d2e;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.5em;
+      color: #2e4d2e;
+    }
+
+    a {
+      text-decoration: none;
+      color: #005f3b;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .site-header {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .site-title {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .site-subtitle {
+      font-size: 1rem;
+      margin: 0.5rem 0 0 0;
+      font-weight: 300;
+    }
+
+    /* Navigation */
+    .main-nav {
+      background: #4caf50;
+      text-align: center;
+      padding: 0.75rem;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav li {
+      display: inline;
+      margin: 0 1rem;
+    }
+
+    .main-nav a {
+      font-weight: 600;
+      color: white;
+    }
+
+    .main-nav a:hover {
+      background: #2e7d32;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    /* Table Section */
+    .types-table {
+      padding: 1rem;
+      max-width: 900px;
+      margin: 1rem auto;
+      background: white;
+      border: 2px solid #c8e6c9;
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    caption {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    th, td {
+      border: 1px solid #81c784;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    th {
+      background: #4caf50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f0f7f0;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      background: #2e7d32;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .source-note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #2e4d2e;
+      text-align: center;
+    }
+
+    .source-note a {
+      color: #005f3b;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">My Mushroom Studio</h1>
+    <h2 class="site-subtitle">Here are the different Types of Mushrooms</h2>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="types.html">TYPES</a></li>
+      <li><a href="featured.html">FEATURED</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="types-table">
+      <table>
+        <caption>Six Mushrooms based on genus, species, type, common names</caption>
+        <thead>
+          <tr>
+            <th>Genus</th>
+            <th>Species</th>
+            <th>Type</th>
+            <th>Common Names</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Polyozellus</td>
+            <td>atrolazulinus</td>
+            <td>False Gill</td>
+            <td>Blue Chanterelle</td>
+          </tr>
+          <tr>
+            <td>Hydnellum</td>
+            <td>caeruleum</td>
+            <td>Tooth Fungus</td>
+            <td>Blue Orange Hydnellum</td>
+          </tr>
+          <tr>
+            <td>Omphalotus</td>
+            <td>olivascens</td>
+            <td>Gilled Mushroom</td>
+            <td>Western Jack O'Lantern</td>
+          </tr>
+          <tr>
+            <td>Boletus</td>
+            <td>edulis var. edulis</td>
+            <td>Bolete</td>
+            <td>King Bolete / Porcini</td>
+          </tr>
+          <tr>
+            <td>Cortinarius</td>
+            <td>violaceus</td>
+            <td>Gilled Mushroom</td>
+            <td>Violet Web-cap</td>
+          </tr>
+          <tr>
+            <td>Cortinarius</td>
+            <td>sanguineus</td>
+            <td>Gilled Mushroom</td>
+            <td>Blood Red Web-cap</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="source-note">
+        Source: <a href="https://mushroomcoloratlas.com/">The Mushroom Color Atlas</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>References: Mushroom Color Atlas • © 2025</p>
+  </footer>
+</body>
+</html>
