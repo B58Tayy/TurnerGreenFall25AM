@@ -4,8 +4,165 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fly Agaric — The Mystical Mushroom</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #ff7ce7, #a66cff, #66b2ff);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.8em;
+      margin: 0;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h2 {
+      font-weight: 400;
+      color: #fce4ff;
+      margin-top: 5px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      gap: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 30px;
+      margin-bottom: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffe6ff;
+      transform: scale(1.1);
+    }
+
+    main {
+      line-height: 1.8;
+    }
+
+    section {
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    section h3 {
+      font-family: 'Lora', serif;
+      color: #fff0ff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      border: 3px solid #ffffff80;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    }
+
+    .buttonRelative {
+      text-align: center;
+      background: #ffb3ff;
+      color: #3d0066;
+      font-weight: bold;
+      padding: 12px 25px;
+      width: fit-content;
+      margin: 25px auto;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .buttonRelative:hover {
+      transform: scale(1.1);
+      background: #ffe1ff;
+    }
+
+    aside {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    aside h2 {
+      font-family: 'Lora', serif;
+      color: #fff0ff;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    footer a {
+      color: #ffe6ff;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,35 +186,34 @@
         <section id="intro">
           <h3>Introduction</h3>
           <p>
-            The Fly Agaric mushroom (<em>Amanita muscaria</em>) is one of the most recognizable fungi in the world. 
-            Known for its bright red cap covered in white spots, it has appeared in fairy tales, video games, and folklore 
-            for centuries. Though beautiful, it is toxic and should never be eaten raw.
+            The Fly Agaric mushroom (<em>Amanita muscaria</em>) is one of the most recognizable fungi in the world. Known for its bright red cap covered in white spots, it’s a striking symbol of the forest and often appears in fairy tales, fantasy artwork, and folklore. Its appearance sparks a sense of magic and danger — a reminder that not everything beautiful is safe to touch. Though visually enchanting, the Fly Agaric contains toxins that can cause nausea and hallucinations if consumed, making it one of nature’s most deceptive beauties. What fascinates me most about this mushroom is how it seems to live between reality and myth. For centuries, people have connected it with spiritual journeys, legends, and even holiday traditions. In some cultures, it’s said to represent transformation and connection to nature’s mysteries. Its vivid red and white colors are thought to have inspired the look of Santa Claus, and it’s also a famous symbol in games and stories like <em>Super Mario Bros.</em>. Whether it’s growing under birch trees in real life or glowing in digital worlds, the Fly Agaric continues to capture our imagination, blending science, history, and magic all in one bright little mushroom.
           </p>
         </section>
 
         <section id="biology">
           <h3>Biology and Habitat</h3>
           <p>
-            Fly Agaric mushrooms grow symbiotically with birch and pine trees in the Northern Hemisphere. 
-            They usually appear in late summer through fall. The species name comes from an old tradition 
-            of using small pieces of the mushroom in milk to attract and kill flies — hence the name “Fly” Agaric.
+            Fly Agaric mushrooms thrive in temperate forests, growing in harmony with birch, pine, and spruce trees. 
+            This symbiotic relationship allows both organisms to exchange nutrients, enriching the soil and promoting forest health. 
+            They are usually found in late summer through fall, dotting the forest floor like bright red jewels among fallen leaves. 
+            Historically, the name “Fly Agaric” came from its use as an insecticide — small pieces were placed in milk to attract and kill flies.
           </p>
         </section>
 
         <section id="culture">
           <h3>Symbolism and Culture</h3>
           <p>
-            This mushroom has deep cultural roots, from Siberian shamanism to modern pop culture. 
-            Some researchers believe it may have inspired aspects of Santa Claus imagery due to its 
-            red-and-white color and connection with reindeer. It’s also famous in the <em>Super Mario Bros.</em> 
-            games as the “power-up” mushroom.
+            From ancient rituals to modern pop culture, the Fly Agaric has fascinated humans for centuries. 
+            In Siberian shamanic traditions, it was believed to connect the physical and spiritual realms. 
+            Some historians even link it to the origins of Santa Claus — red and white colors, reindeer, and mystical journeys through the sky. 
+            Today, it’s best known in media like <em>Super Mario Bros.</em>, where the mushroom symbolizes power, transformation, and growth.
           </p>
         </section>
 
         <section id="gallery">
           <h3>Gallery</h3>
           <div class="image-gallery">
-            <img src= "images/img1.jpg"Fly Agaric mushrooms in the forest">
+            <img src="images/img1.jpg" alt="Fly Agaric mushrooms in the forest">
             <img src="images/img2.jpg" alt="Close-up of Fly Agaric cap">
             <img src="images/img3.jpg" alt="Fly Agaric under birch trees">
             <img src="images/img4.jpg" alt="Fly Agaric cluster on mossy ground">
@@ -65,15 +221,13 @@
         </section>
       </article>
 
-      <div class="buttonAbsolute">SUBSCRIBE</div>
       <div class="buttonRelative">VIEW GALLERY</div>
     </main>
 
     <aside>
       <h2>Fun Fact</h2>
       <p>
-        Despite being toxic, Fly Agaric has been used historically in small doses for its psychoactive 
-        properties in traditional Siberian rituals.
+       One of the coolest things I learned about the Fly Agaric mushroom is how much history and mystery it carries. It’s wild to think that something so colorful and almost cartoon-like has been part of real-life traditions for hundreds of years. People used to believe it had magical powers and even used it in old rituals to connect with the spirit world. Some scientists think it might have inspired the red-and-white colors of Santa’s outfit, which honestly blew my mind. What’s even crazier is that while it looks like something straight out of a fairy tale, it’s actually toxic and should never be eaten. I just find it fascinating how one mushroom can be both dangerous and legendary at the same time.
       </p>
     </aside>
 
